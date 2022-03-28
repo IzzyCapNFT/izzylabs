@@ -1,0 +1,247 @@
+.collection-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    min-height: fit-content;
+    margin: 120px 0;
+}
+
+.collection-card {
+    display: flex;
+    height: 360px;
+    width: 1000px;
+}
+
+.collection-bullets {
+    height: 100%;
+    box-shadow: 15px 0 9px -15px #1f2235;
+    width: 280px;
+}
+
+.collection-bullets-details {
+    flex-grow: 1;
+    width: 650px;
+    overflow: hidden;
+    padding: 0 0 0 70px;
+}
+
+.collection-screen-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 360px;
+    width: 100%;
+}
+
+.collection-page {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.collection-info {
+    height: 100%;
+    width: 290px;
+    justify-content: space-between;
+    flex-direction: column;
+    display: flex;
+}
+
+.collection-info-btn {
+    justify-content: center;
+    margin: 0 70px 35px 0;
+    display: flex;
+}
+
+.collection-image-container {
+    height: 100%;
+    width: 360px;
+}
+
+.collection-main-heading {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.collection-image {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.collection-info-title {
+    margin: 20px 0 20px -70px;
+    font-size: 24px;
+    font-family: 'Poppins SemiBold';
+    text-align: center;
+}
+
+.collection-details-carousal {
+    transition: transform 1s ease-out;
+}
+
+.bullet-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.bullets {
+    width: 80%;
+    position: relative;
+    z-index: 2;
+}
+
+.bullet {
+    display: flex;
+    align-items: center;
+    background-color: #1f2235;
+    height: 40px;
+    margin: 15px 0;
+    padding: 0 8px;
+    border-radius: 20px;
+    width:15px;
+    transition: width 0.6s ease;
+    cursor: pointer;
+}
+
+.bullet-label {
+    font-size: 14px;
+    white-space: nowrap;
+    font-family: 'Poppins SemiBold';
+}
+
+.bullet-logo {
+    color:var(--white);
+    height: 16px;
+    margin: 0 30px 0 4px;
+}
+
+.bullet-icons {
+    width: 34px;
+    height: 100%;
+    z-index: 1;
+    background-color: #1f2235;
+    position: absolute;
+}
+
+.selected-bullet {
+    color: white;
+    width: 100%;
+}
+
+.heading-bullet {
+    position: absolute;
+    left: -30px;
+    height: 15px;
+    width: 15px;
+    top: 5px;
+    background-color: var(--dark-orange);
+    border-radius:50%;
+}
+
+/* IPAD PRO RESPONSIVENESS */
+@media only screen and (max-width: 1110px) {
+  .collection-card {
+    width: 880px;
+  }
+
+  .collection-bullet-details {
+    padding: 0 0 0 70px;
+  }
+}
+
+/* IPAD RESPONSIVENESS */
+@media only screen and (max-width: 1023px) {
+  .collection-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bullets {
+    width: 90%;
+  }
+
+  .collection-card {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+    align-items: center;
+    width: 90%;
+  }
+
+  .collection-bullet-details {
+    height: 360px;
+    padding: 0;
+    width: fit-content;
+  }
+
+  .collection-bullets {
+    margin: 30px 0;
+    width: 50%;
+  }
+
+  .selected-bullet {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 898px) {
+  .collection-card {
+    width: 100%; 
+    box-shadow: 0 0 20px -2px #1f2235;
+  }
+  .collection-bullets {
+    margin: 0;
+    box-shadow: 0 15px 9px -15px #1f2235;
+    width: 100%;
+  }
+
+  .bullet-container {
+    width: 360px;
+  }
+
+  .collection-bullets-details {
+    height: 720px;
+    width: 360px;
+    padding: 0;
+  }
+
+  .collection-screen-container {
+    height: 720px;
+  }
+
+  .collection-page {
+    flex-direction: column;
+  }
+
+  .collection-info {
+    height: 340px;
+    width: 340px;
+    margin: 10px;
+  }
+
+  .collection-image-container {
+    height: 360px;
+  }
+
+  .collection-info-title {
+    margin: 0;
+  }
+
+  .collection-info-btn {
+    margin: 0 0 35px 0;
+  }
+
+  .heading-bullet {
+      display: none;
+  }
+}
